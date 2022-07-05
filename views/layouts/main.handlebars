@@ -4,19 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Museum</title>
-  {{!-- <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css"> --}}
+  <title>Tech Blog</title>
+  <link rel="stylesheet" type="text/css" href="/css/jass.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
 <body>
   <header>
-    <h1>Welcome to the Four Seasons Museum</h1>
+    <h1>Tech Conversations</h1>
   </header>
   <nav>
     <a href="/">Home</a>
-    <!-- If the user is logged in, show a logout button -->
+    <!-- If the user is logged in, show a dashboard and logout button -->
     {{#if loggedIn}}
+    <button id="dashboard" class="btn-no-style">Dashboard</button>
     <button id="logout" class="btn-no-style">Logout</button>
     {{else}}
     <!-- Otherwise, show a link to login -->
@@ -24,17 +25,14 @@
     {{/if}}
   </nav>
   <main>
-    <aside>
-      <h2>Enjoy the articles!</h2>
-    </aside>
     <div class="articles">
       {{{body}}}
     </div>
   </main>
   <!-- If the user is logged in, load the JS script for when they logout -->
-  {{!-- {{#if loggedIn}}
+  {{#if loggedIn}}
   <script src="/js/logout.js"></script>
-  {{/if}} --}}
+  {{/if}}
 </body>
 
 </html>

@@ -12,10 +12,9 @@ router.get('/', async (req, res) => {
     );
 
     // Renders articles to homepage
-    // TODO: create homepage.handlebars
     res.render('homepage', {
       articles,
-      loggedIn: req.session.loggedIn,
+      loggedIn: req.session.logged_in,
     });
   } catch (err) {
     console.log(err);
@@ -24,6 +23,15 @@ router.get('/', async (req, res) => {
 });
 
 
-// TODO: Login Redirect
+// Login Route (from UNCC Bootcamp Unit 14 Activity 16)
+router.get('/login', (req, res) => {
+  // If the user is already logged in, redirect to the homepage
+  if (req.session.logged_in) {
+    res.redirect('/');
+    return;
+  }
+  // Otherwise, render the 'login' template
+  res.render('login');
+});
 
 module.exports = router;
