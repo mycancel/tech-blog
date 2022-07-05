@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { Article } = require('../models');
 
 // Get all articles
 router.get('/', async (req, res) => {
