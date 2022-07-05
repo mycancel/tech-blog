@@ -1,10 +1,12 @@
 const router = require('express').Router();
-const { Article } = require('../models');
+const { Article, User } = require('../models');
 
 // Get all articles
 router.get('/', async (req, res) => {
   try {
-    const articleDbData = await Article.findAll();
+    const articleDbData = await Article.findAll({
+      include: { model:User }
+    });
 
     // Serializes articles
     const articles = articleDbData.map((article) =>

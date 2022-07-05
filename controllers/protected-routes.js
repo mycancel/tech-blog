@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Article } = require('../models');
+const { Article, User } = require('../models');
 
 // Create routes to see Dashboard with articles created by user
 router.get('/dashboard', async (req, res) => {
@@ -7,7 +7,8 @@ router.get('/dashboard', async (req, res) => {
     const articleDbData = await Article.findAll({
       where: {
         user_id: req.session.user_id
-      }
+      },
+      include: { model:User }
     });
 
     // Serializes articles

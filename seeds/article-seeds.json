@@ -1,20 +1,20 @@
 [
   {
-    "title": "Title 1",
+    "title": "How to Code",
     "content": "This is Title 1's Content of this page. Hello Hello Hello.",
     "date_created": "2022-07-05T02:08:10.918Z",
     "user_id": 1,
     "comment_id": 1
   },
   {
-    "title": "Title 2",
+    "title": "CSS for Beginners",
     "content": "This is Title 2's Content of this page. Hello Hello Hello.",
     "date_created": "2022-07-05T02:08:10.918Z",
     "user_id": 2,
     "comment_id": 2
   },
   {
-    "title": "Title 3",
+    "title": "What is MVC?",
     "content": "This is Title 3's Content of this page. Hello Hello Hello.",
     "date_created": "2022-07-05T02:08:10.918Z",
     "user_id": 3,
