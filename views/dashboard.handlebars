@@ -1,4 +1,31 @@
-{{#each articles as |article|}}
-{{> article-details}}
-{{/each}}
-<button id="create-article" class="btn-no-style">New Post</button>
+<aside>
+  <h2>Create a New Article</h2>
+  <form class='new-article-form'>
+    <label for='title'>
+      Title:
+    </label>
+    <br />
+    <textarea id='title' name='title' rows='2' cols='30'>
+        {{title}}
+      </textarea>
+    <br />
+    <label for='content'>
+      Content:
+    </label>
+    <br />
+    <textarea id='content' name='content' rows='5' cols='30'>
+        {{content}}
+      </textarea>
+    <br />
+    <button type='submit' value='Submit'>
+      Submit
+    </button>
+  </form>
+</aside>
+
+<div>
+  <h2>Catalog</h2>
+  {{#each articles as |article|}}
+  {{> article-details}}
+  {{/each}}
+</div>
