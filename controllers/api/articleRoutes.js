@@ -40,6 +40,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
+// Delete selected article
 router.delete('/:id', async (req, res) => {
   try {
     const articleData = await Article.destroy({
