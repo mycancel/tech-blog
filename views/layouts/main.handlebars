@@ -29,9 +29,10 @@
       {{{body}}}
     </div>
   </main>
-  <!-- If the user is logged in, load the JS script for when they logout -->
+  <!-- If the user is logged in, load the JS script for when they logout or click dashboard -->
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
+  <script src="/js/dashboard.js"></script>
   {{/if}}
 </body>
 
