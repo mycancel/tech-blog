@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "db:create": "node config/init.js"
+    "db:create": "node config/init.js",
+    "db:seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",

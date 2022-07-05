@@ -12,9 +12,9 @@ Article.belongsTo(User, {
 });
 
 User.hasMany(Comment, {
-    foreignKey: 'commenter_id',
-    onDelete: 'CASCADE'
-  });
+  foreignKey: 'commenter_id',
+  onDelete: 'CASCADE'
+});
 
 Comment.belongsTo(User, {
   foreignKey: 'commenter_id'
