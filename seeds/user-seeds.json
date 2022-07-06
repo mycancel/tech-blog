@@ -1,16 +1,16 @@
 [
   {
-    "name": "OneUser",
+    "name": "amyCodes",
     "email": "oneuser@email.com",
     "password": "1password"
   },
   {
-    "name": "TwoUser",
+    "name": "lovesToCode",
     "email": "twouser@email.com",
     "password": "2password"
   },
   {
-    "name": "ThreeUser",
+    "name": "grilledCheese",
     "email": "threeuser@email.com",
     "password": "3password"
   }

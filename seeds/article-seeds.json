@@ -7,14 +7,14 @@
   },
   {
     "title": "CSS for Beginners",
-    "content": "This is Title 2's Content of this page. Hello Hello Hello.",
-    "date_created": "2022-07-05T02:08:10.918Z",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "date_created": "2022-08-05T02:08:10.918Z",
     "user_id": 2
   },
   {
     "title": "What is MVC?",
-    "content": "This is Title 3's Content of this page. Hello Hello Hello.",
-    "date_created": "2022-07-05T02:08:10.918Z",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "date_created": "2022-07-02T02:08:10.918Z",
     "user_id": 3
   }
 ]

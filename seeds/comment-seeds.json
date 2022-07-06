@@ -1,25 +1,25 @@
 [
   {
-    "text": "This will be on Title 1.",
-    "date_created": "2022-07-05T02:08:10.918Z",
+    "text": "Wow! Thank you for the information.",
+    "date_created": "2022-03-05T02:08:10.918Z",
     "user_id": 2,
     "article_id": 1
   },
   {
-    "text": "This will be on Title 1 with the other.",
-    "date_created": "2022-07-05T02:08:10.918Z",
+    "text": "You have a typo in the second sentence.",
+    "date_created": "2022-07-03T02:08:10.918Z",
     "user_id": 3,
     "article_id": 1
   },
   {
-    "text": "This will be on Title 2.",
-    "date_created": "2022-07-05T02:08:10.918Z",
+    "text": "This was very informative.",
+    "date_created": "2022-02-05T02:08:10.918Z",
     "user_id": 1,
     "article_id": 2
   },
   {
-    "text": "This will be on Title 3.",
-    "date_created": "2022-07-05T02:08:10.918Z",
+    "text": "This was not what I was looking for.",
+    "date_created": "2022-07-01T02:08:10.918Z",
     "user_id": 3,
     "article_id": 3
   }
