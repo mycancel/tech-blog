@@ -9,3 +9,16 @@
   {{> comment-details}}
   {{/each}}
 </div>
+
+<form id='new-comment-form'>
+  <label for='text'>
+    Add a comment:
+  </label>
+  <textarea id='text' name='text' rows='2' cols='30'>
+        {{text}}
+      </textarea>
+  <br />
+  <button type='submit' value='Submit'>
+    Submit
+  </button>
+</form>

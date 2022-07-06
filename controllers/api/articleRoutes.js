@@ -1,3 +1,4 @@
+// @/api/articles
 const router = require('express').Router();
 const { Article } = require('../../models');
 

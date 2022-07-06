@@ -56,8 +56,6 @@ router.get("/articles/:id", async (req, res) => {
     // Serializing data
     const article = JSON.parse(JSON.stringify(articleData));
 
-    console.log({article });
-
     res.render("article", { 
       article: article, 
       loggedIn: req.session.logged_in

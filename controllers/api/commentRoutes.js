@@ -1,3 +1,4 @@
+// @/api/comments
 const router = require('express').Router();
 const { Comment } = require('../../models');
 
@@ -6,7 +7,7 @@ router.post('/', async (req, res) => {
   try {
     const newComment = await Comment.create({
       text: req.body.text,
-      user_id: req.session.user_id,
+      user_id: req.session.user_id
     });
 
     return res.status(200).json(newComment);
