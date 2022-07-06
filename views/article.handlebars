@@ -1,24 +1,23 @@
-<h1>{{article.title}}</h1>
-<p>By {{article.user.name}} on {{format_date article.date_created}}</p>
-<br />
-<p>{{article.content}}</p>
-
 <div>
-  <h2>Comments</h2>
-  {{#each article.comments as |comment|}}
-  {{> comment-details}}
-  {{/each}}
-</div>
+  <h2>{{article.title}}</h2>
+  <p id="author">By {{article.user.name}} on {{format_date article.date_created}}</p>
+  <br />
+  <p>{{article.content}}</p>
 
-<form id='new-comment-form'>
-  <label for='text'>
-    Add a comment:
-  </label>
-  <textarea id='text' name='text' rows='2' cols='30'>
+  <div>
+    <h2>Comments</h2>
+    {{#each article.comments as |comment|}}
+    {{> comment-details}}
+    {{/each}}
+  </div>
+
+  <form id='new-comment-form'>
+    <textarea id='text' name='text' rows='2' cols='30'>
         {{text}}
       </textarea>
-  <br />
-  <button type='submit' value='Submit'>
-    Submit
-  </button>
-</form>
+    <br />
+    <button type='submit' value='Submit'>
+      Submit
+    </button>
+  </form>
+</div>
