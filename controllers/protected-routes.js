@@ -30,29 +30,38 @@ router.get("/dashboard", async (req, res) => {
 // Route to read an article
 router.get("/articles/:id", async (req, res) => {
   try {
+    // Getting article and author user data
     const articleData = await Article.findByPk(req.params.id, {
-      include: (
+      include: [
         {
-          model:User
+          model: User,
+          attributes: {
+            include: ['name']
+          }
+        },
+        {
+          model: Comment,
+          include: [
+            {
+              model: User,
+              attributes: {
+                include: ['name']
+              }
+            }
+          ]
         }
-      )
+      ]
     });
+    
+    // Serializing data
+    const article = JSON.parse(JSON.stringify(articleData));
 
-    const article = articleData.get({ plain: true });
+    console.log({article });
 
-    const commentData = await Comment.findAll({
-      where: {
-        article_id: req.params.id
-      }
-    }
-    )
-
-    const comments = JSON.parse(JSON.stringify(commentData));
-
-    console.log(article);
-    console.log(comments);
-
-    res.render("article", { article: article, comments: comments});
+    res.render("article", { 
+      article: article, 
+      loggedIn: req.session.logged_in
+    });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
